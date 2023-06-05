@@ -1,0 +1,109 @@
+#navBar{
+    -fx-background-color: #0e9f68;
+    -fx-font-weight: bold;
+}
+#section{
+    -fx-background-color: #eaf9f4;
+}
+#container{
+    -fx-background-color: #ffffff;
+}
+#title{
+    -fx-font-weight: bold;
+    -fx-text-fill:#ffffff;
+}
+#username{
+    -fx-text-fill:#ffffff;
+}
+
+#productCard{
+    -fx-border-color: #dbdbdb;
+}
+#imageContainer{
+    -fx-border-color: #dbdbdb;
+}
+#productLabel{
+    -fx-font-weight: bold;
+}
+#priceLabel{
+    -fx-font-weight: bold;
+    -fx-text-fill:#0e9f68;
+}
+HyperLink{
+    -fx-text-decoration: none;
+}
+#addItemLink{
+    -fx-font-weight: bold;
+    -fx-text-fill:#0e9f68;
+    -fx-background-color: #ffffff;
+}
+Button{
+    -fx-border-style: none;
+}
+#navBtn{
+    -fx-background-color:  transparent;
+}
+#searchBar{
+    -fx-border-radius: 100px;
+}
+#transparentBtn{
+   -fx-background-color: transparent;
+}
+#titleBar{
+    -fx-background-color: #e8e8e8;
+    -fx-font-weight: bold;
+}
+#checkOutCard{
+    -fx-border-color: #e8e8e8;
+    -fx-border-width: 1px;
+}
+#mathSection{
+    -fx-background-color: #e8e8e8;
+}
+
+#boldGray{
+    -fx-text-fill: #7b7b7b;
+    -fx-font-weight: bold;
+}
+#taxLabel{
+    -fx-font-weight: bold;
+    -fx-text-fill:#0e9f68;
+    -fx-underline: true;
+}
+#payBtn{
+    -fx-background-color: #0e9f68;
+    -fx-font-weight: bold;
+}
+#buttomTabs{
+    -fx-font-weight: bold;
+}
+#menuTab{
+    -fx-border: 1px;
+    -fx-background-color: #ffffff;
+}
+#menuTabActive{
+    -fx-border-color: #0e9f68;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+}
+#menuTabLabelActive{
+    -fx-text-fill:#0e9f68;
+}
+#menuTabLabel{
+    -fx-text-fill: #7b7b7b;
+}
+#buttomTabs, button{
+    -fx-font-weight: bold;
+}
+#cancelBtn{
+    -fx-border-color: #d01616;
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-text-fill: #d01616;
+}
+#holdBtn{
+    -fx-border-color: #0e9f68;
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-text-fill: #0e9f68;
+}

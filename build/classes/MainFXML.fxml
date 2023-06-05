@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFXMLController">
+   <children>
+      <BorderPane id="section" prefHeight="554.0" prefWidth="878.0">
+         <top>
+            <AnchorPane id="navBar" prefHeight="44.0" prefWidth="860.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="3.0" layoutY="2.0" prefHeight="38.0" prefWidth="229.0">
+                     <children>
+                        <Label id="title" layoutX="50.0" layoutY="6.0" text="Jint Coffee Shop">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="navBtn" layoutX="8.0" layoutY="3.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@menu(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="616.0" layoutY="1.0" prefHeight="42.0" prefWidth="259.0">
+                     <children>
+                        <Hyperlink layoutX="73.0" layoutY="7.0">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@clipboard.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Hyperlink>
+                        <Hyperlink layoutX="41.0" layoutY="6.0">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@shop.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Hyperlink>
+                        <Hyperlink id="username" layoutX="104.0" layoutY="10.0" text="Clarence" />
+                        <Button id="navBtn" contentDisplay="GRAPHIC_ONLY" layoutX="202.0" layoutY="6.0" mnemonicParsing="false" text="Button">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@arrow-down.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <ImageView accessibleRole="HYPERLINK" fitHeight="34.0" fitWidth="40.0" layoutX="775.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Formal%20Attire%20white%20bg%20xsmall.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="1.0" layoutY="4.0">
+                     <children>
+                        <AnchorPane />
+                     </children>
+                  </Pane>
+                  <Pane id="container" layoutX="14.0" layoutY="14.0" prefHeight="386.0" prefWidth="579.0">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="31.0" prefWidth="579.0">
+                           <children>
+                              <AnchorPane prefHeight="53.0" prefWidth="236.0">
+                                 <children>
+                                    <ImageView fitHeight="16.0" fitWidth="14.0" layoutX="24.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@add.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink id="addItemLink" layoutX="44.0" layoutY="15.0" text="ADD NEW ITEM" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="296.0" layoutY="2.0" prefHeight="50.0" prefWidth="282.0">
+                                 <children>
+                                    <TextField id="searchBar" layoutX="4.0" layoutY="15.0" prefHeight="26.0" prefWidth="199.0" promptText="Search" />
+                                    <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="220.0" layoutY="4.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="40.0">
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@search.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                        <Pane layoutX="2.200000047683716" layoutY="52.20000076293945">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <ScrollPane id="container" layoutX="0.7999999523162842" layoutY="0.7999992370605469" prefHeight="331.0" prefWidth="576.0">
+                                       <content>
+                                          <GridPane id="container" prefHeight="486.0" prefWidth="558.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <AnchorPane id="#productCard" prefHeight="126.0" prefWidth="112.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$8" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" text="Costa Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@latte.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$5" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="74.0" text="Costa Caramel Latte Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="122.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="2">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$9.99" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="78.0" text="Mocha/Hot Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="234.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="3">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$8" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" text="Costa Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="4">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$8" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" text="Costa Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$9.99" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="74.0" text="Mocha/Hot Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$8" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" text="Costa Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="122.0" layoutY="172.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@latte.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$5" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="20.0" prefWidth="76.0" text="Costa Caramel Latte Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$9.99" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="75.0" text="Mocha/Hot Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@latte.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$5" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="70.0" text="Costa Caramel Latte Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup(1).png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$8" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" text="Costa Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="234.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$9.99" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="78.0" text="Mocha/Hot Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="122.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@latte.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$5" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="74.0" text="Costa Caramel Latte Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="122.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@latte.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$5" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="74.0" text="Costa Caramel Latte Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane id="#productCard" layoutX="234.0" layoutY="10.0" prefHeight="126.0" prefWidth="112.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="84.0" prefWidth="84.0">
+                                                         <children>
+                                                            <AnchorPane id="imageContainer" layoutX="3.0" layoutY="1.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="82.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@coffee-cup.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <Label id="priceLabel" layoutX="42.0" layoutY="128.0" text="\$9.99" />
+                                                      <Label id="productLabel" layoutX="23.0" layoutY="110.0" prefHeight="18.0" prefWidth="78.0" text="Mocha/Hot Coffee" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </GridPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane id="container" layoutX="603.0" layoutY="14.0" prefHeight="431.0" prefWidth="261.0">
+                     <children>
+                        <AnchorPane prefHeight="50.0" prefWidth="261.0">
+                           <children>
+                              <Label layoutX="105.0" layoutY="16.0" text="Checkout">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="titleBar" layoutY="50.0" prefHeight="21.0" prefWidth="262.0">
+                           <children>
+                              <Label layoutX="38.0" layoutY="2.0" text="Name" textFill="#7b7b7b" />
+                              <Label layoutX="131.0" layoutY="2.0" text="QTY" textFill="#7b7b7b" />
+                              <Label layoutX="205.0" layoutY="2.0" text="Price" textFill="#7b7b7b" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="itemsSection" layoutX="1.0" layoutY="71.0" prefHeight="218.0" prefWidth="260.0">
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <AnchorPane id="checkOutCard" prefHeight="49.0" prefWidth="260.0">
+                                       <children>
+                                          <AnchorPane layoutX="1.0" prefHeight="46.0" prefWidth="95.0">
+                                             <children>
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="22.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="16.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@trash.png" />
+                                                         </image>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label id="checkOutLabel" layoutX="44.0" layoutY="14.0" prefHeight="18.0" prefWidth="54.0" text="Costa Coffee" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="96.0" layoutY="1.0" prefHeight="46.0" prefWidth="93.0">
+                                             <children>
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="4.0" layoutY="9.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="23.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@minus(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label id="checkOutLabel" layoutX="46.0" layoutY="14.0" text="2" />
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="65.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="20.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@add(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="186.0" prefHeight="46.0" prefWidth="68.0">
+                                             <children>
+                                                <Label id="checkOutLabel" layoutX="23.0" layoutY="15.0" text="\$16" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="50.0">
+                                 <children>
+                                    <AnchorPane id="checkOutCard" prefHeight="49.0" prefWidth="260.0">
+                                       <children>
+                                          <AnchorPane prefHeight="46.0" prefWidth="97.0">
+                                             <children>
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="16.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@trash.png" />
+                                                         </image>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label id="checkOutLabel" layoutX="44.0" layoutY="14.0" prefHeight="18.0" prefWidth="56.0" text="Costa Caramel Latte Coffee" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="97.0" prefHeight="46.0" prefWidth="93.0">
+                                             <children>
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="4.0" layoutY="9.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="23.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@minus(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label id="checkOutLabel" layoutX="46.0" layoutY="14.0" text="2" />
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="65.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="20.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@add(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="186.0" prefHeight="46.0" prefWidth="68.0">
+                                             <children>
+                                                <Label id="checkOutLabel" layoutX="23.0" layoutY="15.0" text="\$10" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutY="100.0">
+                                 <children>
+                                    <AnchorPane id="checkOutCard" prefHeight="49.0" prefWidth="260.0">
+                                       <children>
+                                          <AnchorPane layoutX="1.0" prefHeight="46.0" prefWidth="95.0">
+                                             <children>
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="16.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@trash.png" />
+                                                         </image>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label id="checkOutLabel" layoutX="44.0" layoutY="14.0" prefHeight="18.0" prefWidth="43.0" text="Mocha/Hot Coffee" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="97.0" prefHeight="46.0" prefWidth="93.0">
+                                             <children>
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="4.0" layoutY="9.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="23.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@minus(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label id="checkOutLabel" layoutX="46.0" layoutY="14.0" text="1" />
+                                                <Button id="transparentBtn" contentDisplay="GRAPHIC_ONLY" layoutX="65.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="20.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@add(1).png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="186.0" prefHeight="46.0" prefWidth="68.0">
+                                             <children>
+                                                <Label id="checkOutLabel" layoutX="23.0" layoutY="15.0" text="\$9.99" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="mathSection" layoutY="289.0" prefHeight="97.0" prefWidth="261.0">
+                           <children>
+                              <Label id="boldGray" layoutX="14.0" layoutY="14.0" text="Discount (%)" />
+                              <Label id="boldGray" layoutX="14.0" layoutY="40.0" text="Sub Total" />
+                              <Label id="taxLabel" layoutX="39.0" layoutY="66.0" text="1.5%" />
+                              <Label id="boldGray" layoutX="14.0" layoutY="66.0" text="Tax " />
+                              <TextField layoutX="214.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="30.0" promptText="20">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></TextField>
+                              <Label id="boldGray" layoutX="219.0" layoutY="40.0" text="\$28.79" />
+                              <Label id="boldGray" layoutX="219.0" layoutY="66.0" text="\$1.50" />
+                           </children></AnchorPane>
+                        <AnchorPane id="totalSection" layoutY="386.0" prefHeight="46.0" prefWidth="262.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="15.0" text="Total">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label id="priceLabel" layoutX="220.0" layoutY="15.0" text="\$30.29" textFill="#0e9f68">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children></AnchorPane>
+                     </children></Pane>
+                  <Button id="payBtn" contentDisplay="RIGHT" layoutX="603.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="260.0" text="Pay" textFill="WHITE">
+                     <graphic>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="($30.29)" textFill="WHITE" />
+                     </graphic></Button>
+                  <AnchorPane id="buttomTabs" layoutX="17.0" layoutY="405.0" prefHeight="94.0" prefWidth="573.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="574.0" spacing="20.0">
+                           <children>
+                              <AnchorPane id="menuTabActive" accessibleRole="BUTTON" prefHeight="50.0" prefWidth="101.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="39.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@cup-of-drink.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label id="menuTabLabelActive" layoutX="31.0" layoutY="27.0" text="Coffee" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="menuTab" accessibleRole="BUTTON" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="101.0">
+                                 <children>
+                                    <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="38.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@cocktail.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label id="menuTabLabel" layoutX="22.0" layoutY="27.0" text="Beverages" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="menuTab" accessibleRole="BUTTON" layoutX="112.0" layoutY="10.0" prefHeight="50.0" prefWidth="101.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@bbq.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label id="menuTabLabel" layoutX="36.0" layoutY="28.0" text="BBQ" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="menuTab" accessibleRole="BUTTON" layoutX="213.0" layoutY="10.0" prefHeight="50.0" prefWidth="101.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="39.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@fast-food.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label id="menuTabLabel" layoutX="34.0" layoutY="27.0" text="Snacks" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                              <AnchorPane id="menuTab" accessibleRole="BUTTON" layoutX="315.0" layoutY="10.0" prefHeight="50.0" prefWidth="101.0">
+                                 <children>
+                                    <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="39.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@piece-of-cake.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label id="menuTabLabel" layoutX="30.0" layoutY="27.0" text="Deserts" />
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <Button id="holdBtn" layoutX="474.0" layoutY="55.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="100.0" text="Hold Order">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button id="cancelBtn" layoutX="354.0" layoutY="56.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="100.0" text="Cancel Order">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
